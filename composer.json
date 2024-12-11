@@ -1,0 +1,43 @@
+{
+    "name": "ilaravel/ishipping",
+    "description": "iLaravel iShipping",
+    "keywords": [
+        "laravel",
+        "shipping"
+    ],
+    "homepage": "https://ilaravel.iamir.net/packages/iShippings",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "iamirnet",
+            "email": "me@iamir.net",
+            "homepage": "https://iamir.net",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "src"
+        ],
+        "psr-4": {
+            "iLaravel\\iShipping\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "iLaravel\\iShipping\\Providers\\AppServiceProvider",
+                "iLaravel\\iShipping\\Providers\\AuthServiceProvider",
+                "iLaravel\\iShipping\\Providers\\RouteServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "alopeyk/alopeyk-api-php": "^1.4"
+    }
+}

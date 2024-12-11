@@ -1,2 +1,2 @@
-# ishipping
-iShipping
+# iShipping
+ilaravel/ishipping
