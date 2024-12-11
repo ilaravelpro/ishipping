@@ -15,5 +15,5 @@ function ishipping_path($path = null)
 
 function ishipping($key = null, $default = null)
 {
-    return iconfig('iShipping' . ($key ? ".$key" : ''), $default);
+    return iconfig('ishipping' . ($key ? ".$key" : ''), $default);
 }
