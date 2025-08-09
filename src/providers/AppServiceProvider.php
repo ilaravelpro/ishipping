@@ -19,6 +19,10 @@ class AppServiceProvider extends ServiceProvider
         if($this->app->runningInConsole())
         {
             if (ishipping('database.migrations.include', true)) $this->loadMigrationsFrom(ishipping_path('database/migrations'));
+            if (function_exists("iproduct_path")) {
+                $this->loadMigrationsFrom(iproduct_path('migrations/weight'));
+                $this->loadMigrationsFrom(iproduct_path('migrations/size'));
+            }
         }
         $this->mergeConfigFrom(ishipping_path('config/ishipping.php'), 'ilaravel.main.ishipping');
     }
